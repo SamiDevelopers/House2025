@@ -1,0 +1,90 @@
+var in_progress = false;
+function SendSMStoTenant(data,myControl){
+  if (!data){
+    swal({
+      title: "حدث خطأ",
+      type: "error",
+      title: 'لم يتم ايجاد البيانات!',
+    })
+    return;
+  }
+  if(in_progress){
+    swal({
+      toast: true,
+      position: 'top-start',
+      showConfirmButton: false,
+      type: 'error',
+      title: 'جاري ارسال رسالة، فضلاً انتظر الانتهاء',
+      timer: 3000,
+    })
+    return;
+  }
+  swal({
+      text: 'هل تريد إرسال رسالة لمسؤول الوحدة الأن؟',
+      // #8bc34a text: "لن يمكنك الرجوع في ذلك، و لكن يمكنك إضافته مرة أخرى!",
+      type: 'question',
+      showCancelButton: true,
+      // confirmButtonColor: '#3085d6',
+      confirmButtonColor: '#8bc34a',
+      cancelButtonColor: '#ccc',
+      confirmButtonText: 'نعم، ارسل .. <span class="fa fa-envelope-o font17px"></span>',
+      cancelButtonText: 'إلغاء',
+      animation: false,
+      // confirmButtonClass: 'btn btn-success',
+      // cancelButtonClass: 'btn btn-danger',
+      // buttonsStyling: false
+  })
+  .then(
+    function (result) {
+      if(result.value){
+        in_progress = true;
+        //disabled clicked button and show progress
+        var controlContent = myControl.html();
+        myControl.html("<span class='fa fa-spinner fa-spin'></span>");
+        myControl.attr('disabled','disabled');
+        $.ajax({
+          type: 'POST',
+          data:{
+            'myData' : data,
+            'f' : 'sms_tenant',
+          },
+          datatype: 'json',
+        })
+        .done(function(data){
+          if(data["status"]=="success"){
+            swal({
+              type: 'success',
+              title: 'تم ارسال الرسالة بنجاح',
+              html: data["message"],
+            })
+            $('.smsCreditBadge').text(data["params"][0]);
+          }
+          else if(data["status"]=="failed"){
+            swal({
+              type: 'error',
+              // title: 'خطأ',
+              html: data["message"],
+              confirmButtonText: "أغلق",
+              confirmButtonColor: "#ccc",
+            })
+          }
+          else{
+            window.location.reload();
+          }      
+          in_progress = false;
+          myControl.removeAttr('disabled');
+          myControl.html(controlContent);
+        })
+        .fail(function(data){
+          myControl.removeAttr('disabled');
+          myControl.html(controlContent);
+          // in_progress = false;
+        })
+      }
+      else if(result.dismiss){
+        event.preventDefault();
+      }
+      in_progress = false;
+    }
+  )  
+}
