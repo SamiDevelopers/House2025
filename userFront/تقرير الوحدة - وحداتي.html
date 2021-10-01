@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://www.7esba.com/tenant-dashboard -->
+<html lang="ar" dir="rtl" data-arp-injected="true">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./userFrontStyle/bootstrap.min.css">
+    <link rel="stylesheet" href="./userFrontStyle/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="./userFrontStyle/font-awesome-animation.min.css" type="text/css">
+    <link rel="stylesheet" href="./userFrontStyle/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./userFrontStyle/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="./userFrontStyle/7esbastyle.css">
+    <link rel="stylesheet" href="./userFrontStyle/tenant_dashboard.css">
+    <link rel="stylesheet" href="./userFrontStyle/sweetalert2.min.css">
+    <script async="" src="./userFrontStyle/analytics.js.download"></script>
+    <script>
+      if (location.host === 'www.7esba.com' || location.host === '7esba.com') {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-90016638-1', 'auto');
+        ga('send', 'pageview');
+      }
+    </script>
+    <script>
+      if (location.host === 'www.7esba.com' || location.host === '7esba.com') {
+        (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:384086,hjsv:5};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+        })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+      }
+    </script>
+    <script async="" src="./userFrontStyle/hotjar-384086.js.download"></script>
+    <title>حسابي</title>
+    <script async="" src="./userFrontStyle/modules.5fe2f4f38cf4833026a9.js.download" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+  </head>
+  <body class="vsc-initialized">
+    <nav class="navbar sidebar" role="navigation">
+        <div class="container-fluid">
+      		<!-- Brand and toggle get grouped for better mobile display -->
+      		<div class="navbar-header">
+            <!-- <span class="navbar-toggle text-right nav-bar-menu-name font20px gray-text">القائمة</span> -->
+            <span class="navbar-toggle text-center nav-bar-menu-building-name font20px light-gray-text">عمارة عكا 2021</span>
+      			<button type="button" class="navbar-toggle pull-left" data-target="#bs-sidebar-navbar-collapse-1" data-toggle="collapse">
+      				<span class="sr-only">القائمة</span>
+              <span class="fa fa-bars"></span>
+      			</button>
+      			<!-- <a class="navbar-brand pull-left" href="/admin-dashboard">7esba</a> -->
+      		</div>
+      		<!-- Collect the nav links, forms, and other content for toggling -->
+      		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">            
+            <ul class="nav navbar-nav">
+              <div class="text-center user-account">Mohammad</div>
+                <hr class="hr-margin-top hr-light-gray">
+                <div class="text-center build-address">
+                  <div class="address-name">عمارة عكا 2021</div>                
+                  <div class="address-text"></div>
+                </div>
+                <hr class="hr-margin-top hr-light-gray">
+              <li class="nav-account-myaccount"><a href="https://www.7esba.com/account" class="text-right"><i class="fa fa-user-o" aria-hidden="true"></i><span> حسابي</span></a></li>
+              <li class="nav-item-my-units active" id="nav-item-my-units"><a href="https://www.7esba.com/tenant-dashboard"><span class="fa fa-fw fa-home sub-sidebar-icon" aria-hidden="true"></span>وحداتي</a></li>
+              <hr class="hr-margin-top hr-light-gray">
+              <li class="font14px"><a href="https://www.7esba.com/logout" class="text-right"><span class="fa fa-sign-out" aria-hidden="true"></span><span> تسجيل خروج</span></a></li>
+            </ul>
+            <ul class="sm-footer">
+              <li><a href="mailto:support@7esba.com" data-toggle="tooltip" title="" target="_blank" class="gray-tooltip" data-original-title="E-mail"><i class="fa fa-envelope fa-2x"></i></a></li>
+              <li><a href="https://www.twitter.com/7esba" data-toggle="tooltip" title="" target="_blank" class="gray-tooltip" data-original-title="Twitter"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="https://www.facebook.com/7esba" data-toggle="tooltip" title="" target="_blank" class="gray-tooltip" data-original-title="Facebook"><i class="fa fa-facebook fa-2x"></i></a></li>
+            </ul>
+          </div>
+    	  </div>
+    </nav>
+    <!-- Content -->
+    <div class="main">
+      
+<div class="container-fluid report-unit-page page-desk">
+  <!-- Title -->
+  <div class="text-center page-title">
+    <h1>تقرير الوحدة عام 2021 <button class="btn btn-success fa fa-calendar page-date-input"></button></h1>
+    <p class="display-on-print"><span dir="rtl">"عمارة عكا 2021"</span> </p>
+  </div>
+
+  <!-- Print -->
+  <div class="row print-section div-dashed-gray ">
+    <div class="form-inline">
+      <button type="button" name="print-button" class="btn btn-info btn-print-report"><span class="fa fa-print fa-2x"></span><span class="btn-text">طباعة</span></button>
+      <div class="checkbox">
+        <label><input type="checkbox" class="acc-balance-check" checked=""> رصيد متراكم</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" class="expenses-collections-check" checked=""> جدول العام</label>
+      </div>
+      <div class="checkbox">
+        <label><input type="checkbox" class="collections-details-check" checked=""> تقرير المدفوعات</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- UNIT DETAILS -->
+  <div class="row text-center xtable-card-light unit-profile"> 
+    <!-- unit number -->
+    <div class="details-element">
+      <button class="btn btn-lg btn-success select-unit" ud="agtofnByb2Q3ZXNiYXImCxIIQnVpbGRpbmcYgICApviWgAgMCxIEVW5pdBiAgICm-JbACAw">
+        <span class="details-title">الوحدة:</span>
+        <span class="unit-number">1</span>
+      </button>
+      <div class="loading-unit-report hidden"><i class="fa fa-spinner fa-gray fa-pulse fa-2x fa-fw"></i></div>
+      <div class="display-inline" id="unit-details">
+        <!-- <span class="details-value"></span> -->
+        
+      </div>
+    </div> 
+  </div> 
+
+  
+  <!-- Unit accumilated credit -->
+  <div class="row text-center" id="unit-acc-balance">
+    <div class="xxborder-1px-solid form-close">
+      <label class="font20px">رصيد الوحدة الحالي: <span class="font17px"></span></label>
+      <span id="acc_balance" class="text-bold font20px" dir="ltr">0</span> <span id="acc_balance_status" class="font17px"></span> 
+      
+      <img id="acc_balance_icon" class="tenant_balance_icon normal" data-msg="شكرا أنكم من السادة الجيران الملتزمون بالسداد. مساهمتكم تساعد على كون العقار في أفضل حال" data-msg-title="شكرا لإلتزامكم 👌" src="./تقرير الوحدة - وحداتي_files/bowtie_icon.png">
+      
+      <div class="ub-sub-title">*حتى اليوم <span>١٢ سبتمبر ٢٠٢١</span></div>
+    </div>
+  </div>
+  
+
+  <!-- summary table -->
+  <div class="bg-menu-color " id="summary-table">
+    <div class="col-12-xs">
+      <div class="text-center font20px">جدول العام</div>
+      <div class="col-12-xs">
+        <div class="">
+          <label class="">رصيد افتتاحي <span class="font14px">(مرحل من 2020)</span>:</label>
+          <span id="opening_balance" class="font14px" dir="ltr">0</span>                            
+          <span id="opening_balance_status" class="font13px"></span>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table id="unitReport" class="table table-striped border-lightgrey-1px table-bottom-margin">
+          <thead>
+            <tr class="">
+              <th class="text-right">نصيب الوحدة من</th>
+              <th class="text-center dash-tables-month-font">يناير</th>
+              <th class="text-center dash-tables-month-font">فبراير</th>
+              <th class="text-center dash-tables-month-font">مارس</th>
+              <th class="text-center dash-tables-month-font">إبريل</th>
+              <th class="text-center dash-tables-month-font">مايو</th>
+              <th class="text-center dash-tables-month-font">يونيو</th>
+              <th class="text-center dash-tables-month-font">يوليو</th>
+              <th class="text-center dash-tables-month-font">أغسطس</th>
+              <th class="text-center dash-tables-month-font">سبتمبر</th>
+              <th class="text-center dash-tables-month-font">أكتوبر</th>
+              <th class="text-center dash-tables-month-font">نوفمبر</th>
+              <th class="text-center dash-tables-month-font">ديسمبر</th>
+              <th class="text-center">مجموع 2021</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dues DETAILS-->
+            
+
+            <!-- Dues TOTALS-->
+            <tr id="dues_totals" class="bg-red text-center top-gray-border">
+              <td class="bg-danger xtext-bold font17px text-right">مجموع المديونيات</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr">-</td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr"></td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr"></td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text" dir="ltr"></td>
+              
+              <td class="bg-danger unit-report xtext-bold month_due red-text right-dashed-gray-border text-bold" dir="ltr"></td>
+              
+            </tr>
+
+            <!-- Collections -->
+            <tr id="cols" class="bg-success text-center">
+              <td class="bg-success xtext-bold font17px text-right">المدفوعات</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text">-</td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text"></td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text"></td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text"></td>
+              
+                <td class="bg-success unit-report xtext-bold month_col green-text right-dashed-gray-border text-bold"></td>
+              
+            </tr>
+
+            <!-- Opening Balance -->
+            <tr id="OPENbalance" class="text-center">
+                <td class="font17px text-right">رصيد افتتاحي</td>
+                <td class="unit-report month_open_balance" dir="ltr">0</td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr">0</td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr">0</td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr">0</td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr">0</td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr">0</td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr">0</td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr">0</td>
+
+                  <td class="unit-report month_open_balance" dir="ltr">0</td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr"></td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr"></td>
+                
+                  <td class="unit-report month_open_balance" dir="ltr"></td>
+                
+                <td class="unit-report month_open_balance right-dashed-gray-border text-bold" dir="ltr">0</td>
+            </tr>
+
+            <!-- Total & balance -->
+            <tr id="totals" class=" text-center top-gray-border">
+              <td class="text-bold font17px text-right">الرصيد</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr">0</td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr"></td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr"></td>
+              
+                <td class="unit-report month_bal text-bold" dir="ltr"></td>
+              
+              <td class="font20px right-dashed-gray-border text-bold"><span class="total_diff text-bold" dir="ltr">0</span> <span class="total_diff_status font14px" dir="ltr"></span></td>  
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Collections details table -->
+  <div class="table-responsive unit-collection-summary " id="unit-collection-summary">
+    <table class="table table-striped border-lightgrey-1px">
+      <thead>
+        <tr>
+          <td colspan="3" class="bg-success font20px text-bold text-center">تقرير المدفوعات</td>          
+        </tr>
+        <tr>
+          <th class="bg-success text-right">التاريخ</th>
+          <th class="bg-success text-right col-details">القيمة</th>
+          <th class="bg-success text-right">ملاحظات</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+    </table>
+  </div>
+  
+  <input type="hidden" name="myYear" value="2021">    
+  <div id="printableFooter"></div>
+</div>
+
+<div class="page-mob">
+  <div class="unit-balance-header bg-green text-white">
+    <div class="div-60 pull-right">
+      <div class="font20px">رصيد الوحدة الحالي</div>
+      <div class="font17px text-lightgreen ub-sub-title">*حتى اليوم <span>١٢ سبتمبر ٢٠٢١</span></div>
+    </div>
+    
+    <div class="div-40 unit-balance bg-lightgreen font17px">
+      <div class="balance_icon_mobile pull-left">
+        
+        <img id="acc_balance_icon" class="tenant_balance_icon normal" src="./تقرير الوحدة - وحداتي_files/bowtie_icon.png">
+        
+      </div>
+      <div class="acc-balance-section">
+        <div class="acc-balance-div" dir="rtl">
+          <div class="acc-balance-value">
+            <span class="" dir="ltr">0</span><span class=""> ج</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="unit-title-header font20px">
+    <button class="div-half top-btn bg-grey text-white select-unit" ud="agtofnByb2Q3ZXNiYXImCxIIQnVpbGRpbmcYgICApviWgAgMCxIEVW5pdBiAgICm-JbACAw">الوحدة: <span class="unit-number">1</span></button><!--
+    --><button class="div-half top-btn bg-grey text-white select-year">عام: <span class="report-year">2021</span></button>
+  </div>
+  <div class="months-cards-list ">
+    
+    <div class="month-card hidden">
+      <div href="#" class="month-card" id="mon-card-12" data-toggle="collapse" data-target="#details-12">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">ديسمبر</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-12">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات ديسمبر</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات ديسمبر</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">-</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر ديسمبر</span></span><span class="month-close-val text-bold"></span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card hidden">
+      <div href="#" class="month-card" id="mon-card-11" data-toggle="collapse" data-target="#details-11">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">نوفمبر</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-11">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات نوفمبر</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات نوفمبر</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">-</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر نوفمبر</span></span><span class="month-close-val text-bold"></span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card hidden">
+      <div href="#" class="month-card" id="mon-card-10" data-toggle="collapse" data-target="#details-10">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">أكتوبر</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-10">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات أكتوبر</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات أكتوبر</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر أكتوبر</span></span><span class="month-close-val text-bold"></span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-9" data-toggle="collapse" data-target="#details-9">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">سبتمبر</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse in sub-level-1" id="details-9">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات سبتمبر</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات سبتمبر</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر سبتمبر</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-8" data-toggle="collapse" data-target="#details-8">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">أغسطس</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-8">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات أغسطس</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات أغسطس</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر أغسطس</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-7" data-toggle="collapse" data-target="#details-7">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">يوليو</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-7">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات يوليو</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات يوليو</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر يوليو</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-6" data-toggle="collapse" data-target="#details-6">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">يونيو</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-6">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات يونيو</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات يونيو</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر يونيو</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-5" data-toggle="collapse" data-target="#details-5">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">مايو</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-5">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات مايو</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات مايو</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر مايو</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-4" data-toggle="collapse" data-target="#details-4">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">إبريل</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-4">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات إبريل</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات إبريل</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر إبريل</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-3" data-toggle="collapse" data-target="#details-3">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">مارس</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-3">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات مارس</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات مارس</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر مارس</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-2" data-toggle="collapse" data-target="#details-2">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">فبراير</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-2">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات فبراير</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات فبراير</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر فبراير</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+    
+    <div class="month-card ">
+      <div href="#" class="month-card" id="mon-card-1" data-toggle="collapse" data-target="#details-1">
+        <div class="main-area">
+          <div class="div-40 pull-right text-bold">
+            <div class="font14px">2021</div>
+            <div class="month-txt font30px">يناير</div>
+          </div>
+          <div class="div-30 pull-right text-center">
+          <div class="light-gray-text text-bold month-card-exp-col">مديونيات</div>
+          <div class="value exp-value">0</div>
+          </div>
+          <div class="div-30 text-center">
+            <div class="light-gray-text text-bold month-card-exp-col">مدفوعات</div>
+            <div class="value col-value">0</div>
+          </div>
+        </div>
+        <div class="month-card-footer light-grey-text"><i class="fa fa-sort" aria-hidden="true"></i> التفاصيل ...</div> 
+      </div>
+      <div class="mon-details-section collapse  sub-level-1" id="details-1">
+        <ul>
+          
+          <li class=""><span class="month-det-title">مديونيات يناير</span><span class="month-total-exp ">0</span></li>
+          <li><span class="month-det-title">مدفوعات يناير</span><span class="month-total-col ">0</span></li>
+          
+          <li><span class="month-det-title">مرحل من الشهر الماضي</span><span class="month-open-val ">0</span></li>
+          <li><span class="month-det-title font17px">رصيد الوحدة <span class="text-bold">أخر يناير</span></span><span class="month-close-val text-bold">0</span></li>
+        </ul>
+      </div>  
+    </div>
+     
+  </div>
+  <div class="loading-unit-report hidden"><i class="fa fa-spinner fa-gray fa-pulse fa-2x fa-fw"></i></div>
+  <!-- Year Modal -->
+  <div id="myYearModal" class="year-modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close">×</span>
+        <p class="font30px">اختر العام <span class="fa fa-fw fa-calendar" aria-hidden="true"></span></p>
+      </div>
+      <div class="modal-body text-center">
+        <div class="years-list">
+          
+          <button class="choose-year font20px selected-year text-bold" go2year="2021">2021</button>
+          
+          <button class="choose-year font20px " go2year="2020">2020</button>
+          
+          <button class="choose-year font20px " go2year="2019">2019</button>
+          
+          <button class="choose-year font20px " go2year="2018">2018</button>
+          
+          <button class="choose-year font20px " go2year="2017">2017</button>
+          
+          <button class="choose-year font20px " go2year="2016">2016</button>
+          
+          <button class="choose-year font20px " go2year="2015">2015</button>
+          
+          <button class="choose-year font20px " go2year="2014">2014</button>
+          
+          <button class="choose-year font20px " go2year="2013">2013</button>
+          
+          <button class="choose-year font20px " go2year="2012">2012</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Unit Modal -->
+<div id="myUnitModal" class="unit-modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">×</span>
+      <p class="font30px">اختر الوحدة <span class="fa fa-fw fa-home" aria-hidden="true"></span></p>
+    </div>
+    <div class="modal-body text-center">
+      <div class="unit-list">
+        <i class="fa fa-spinner fa-gray fa-pulse fa-2x fa-fw"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+    <script src="./userFrontStyle/jquery.min.js.download"></script>
+    <script src="./userFrontStyle/jquery-ui.min.js.download"></script>
+    <script src="./userFrontStyle/bootstrap.min.js.download"></script>
+    <script src="./userFrontStyle/bootstrap-datepicker.min.js.download"></script>
+    <script src="./userFrontStyle/bootstrap-datepicker.ar.min.js.download" charset="UTF-8"></script>
+    <script src="./userFrontStyle/sweetalert2.min.js.download"></script>
+
+    <script>
+      $(document).ready(function() {
+        // $("li[class^=nav-item] .active").find(".load-icon").addClass("hidden");
+      })
+      $('.dropdown').on('show.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+      });
+      $('.dropdown').on('hide.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(2);
+      });
+      function menuSelect(mi){
+        $("li[class^=nav-item]").removeClass("active");
+        mi.addClass("active");
+      }
+      function ga_register(cat, act, lbl){
+        if (location.host === 'www.7esba.com' || location.host === '7esba.com'){
+          ga('send', 'event', cat, act, lbl);
+        }
+      }
+      $(document).on("click", "li[class^=nav-item]", function(){
+        $(".load_icon").remove();
+        $(this).find("a").append('<i class="load-icon fa fa-spinner fa-spin pull-left hidden load_icon"></i>');
+        $(this).find(".load-icon").removeClass("hidden");
+      })      
+    </script>
+<script>
+  $(document).ready(function(){
+    document.title = 'تقرير الوحدة';
+    menuSelect($("li[class='nav-item-my-units']"));
+
+    var due, col, open_balance;
+    $("tbody").children("tr").each(function(){
+      $(this).children("td").eq(13).addClass("right-dashed-gray-border text-bold");
+      // $(this).children("td").eq(1).addClass("right-dashed-gray-border");
+    })
+
+    // Calc totals
+    var index = 1;
+    var result;
+
+    due = parseFloat( $("#dues_totals td").eq(13).html() == "" ? 0 : $("#dues_totals td").eq(13).html().replace(/,/g , ''));
+    col = parseFloat( $("#cols td").eq(13).html() == "" ? 0 : $("#cols td").eq(13).html().replace(/,/g , '') );
+    open_balance = parseFloat( $("#OPENbalance td").eq(13).html() == "" ? 0 : $("#OPENbalance td").eq(13).html().replace(/,/g , '') );
+    result = col + due;
+    result += open_balance;
+    // $(".total_diff").addClass("font20px");
+    $(".total_diff").html(result.toLocaleString("en-US"));
+
+    if(result<0){
+      // $("#tot_balance").addClass("red-text")
+      $(".total_diff, .total_diff_status").addClass("red-text");
+      $(".total_diff_status").html("(مديونية)");
+    }
+    else if(result>0){
+      // $("#tot_balance").addClass("green-text")
+      $(".total_diff, .total_diff_status").addClass("green-text");
+      $(".total_diff_status").html("(رصيد)");
+    }
+    $("#tot_balance").text(result.toLocaleString("en-US"));
+
+    var acc_balance = parseFloat( $("#acc_balance").html().replace(/,/g , '') );
+    if(acc_balance<0){
+      $("#acc_balance").addClass("red-text");
+      $("#acc_balance_status").html("(مديونية)").addClass("red-text");
+    }
+    else if(acc_balance>0){
+      $("#acc_balance").addClass("green-text");
+      $("#acc_balance_status").html("(رصيد)").addClass("green-text");
+    }
+    // var opening_balance = acc_balance - result
+    var opening_balance = parseFloat( $("#opening_balance").html().replace(/,/g , '') );
+    $("#opening_balance").html(opening_balance.toLocaleString("en-US"));
+    $(".month_open_balance:eq(0)").html(opening_balance.toLocaleString("en-US"));
+    $(".month_open_balance:eq(-1)").html(opening_balance.toLocaleString("en-US"));
+    if(opening_balance<0){
+        $("#opening_balance, .month_open_balance:eq(0), .month_open_balance:eq(-1)").addClass("red-text");
+        $("#opening_balance_status").html("(مديونية)").addClass("red-text");
+    }
+    else if(opening_balance>0){
+        $("#opening_balance, .month_open_balance:eq(0), .month_open_balance:eq(-1)").addClass("green-text");
+        $("#opening_balance_status").html("(رصيد)").addClass("green-text");
+    }
+
+
+    result = opening_balance;
+    $(".month_bal").each(function(){
+      // Set cell value only if current or previous month
+      // else set cell to ""
+      var tempMyMon = $(this).index();
+      var tempCurMonth = new Date();
+      var tempCurYear = tempCurMonth.getFullYear();
+      var tempMyYear = $("input[name=myYear]").val();
+      tempCurMonth = tempCurMonth.getMonth() + 1
+      // YEAR
+      if(tempMyMon > tempCurMonth && tempMyYear>=tempCurYear){
+        return;
+      }
+      due = parseFloat(!$.isNumeric($(".month_due:eq("+($(this).index()-1)+")").html().replace(/,/g , '') ) ? 0 : $(".month_due:eq("+($(this).index()-1)+")").html().replace(/,/g , ''));
+      col = parseFloat(!$.isNumeric($(".month_col:eq("+($(this).index()-1)+")").html().replace(/,/g , '') ) ? 0 : $(".month_col:eq("+($(this).index()-1)+")").html().replace(/,/g , ''));
+      col += result;
+      
+      result = col + due;      
+      $(this).text(result.toLocaleString("en-US"));
+      var reverse_idx = 12-$(this).index();
+      if($(this).index()==1){ //Jan opening balance
+        var set_val;
+        var color = '';
+        set_val = opening_balance.toLocaleString("en-US");
+        if(opening_balance<0){
+          color = 'red-text';
+        }
+        else if (opening_balance>0){
+          color = 'green-text';
+        }
+        $(".month-open-val:eq(11)").addClass(color); //January!
+        $(".month-open-val:eq(11)").text(set_val);
+      }
+
+      $(".month-close-val:eq("+(reverse_idx)+")").text(result.toLocaleString("en-US"));
+      if ((reverse_idx-1)>=0) {$(".month-open-val:eq("+(reverse_idx-1)+")").text(result.toLocaleString("en-US"));}
+      if(result<0){
+        $(".month-close-val:eq("+(reverse_idx)+")").addClass('red-text');
+        if ((reverse_idx-1)>=0) {$(".month-open-val:eq("+(reverse_idx-1)+")").addClass('red-text');}
+      }
+      else if(result>0){
+        $(".month-close-val:eq("+(reverse_idx)+")").addClass('green-text');
+        if ((reverse_idx-1)>=0) {$(".month-open-val:eq("+(reverse_idx-1)+")").addClass('green-text');}
+      }
+      //balance color
+      $(this).text(result.toLocaleString("en-US"));
+      if (result > 0){
+        $(this).addClass("green-text");
+      }
+      else if (result < 0){
+        $(this).addClass("red-text")
+      }
+      // New
+      if($(this).index()>=1 && $(this).index()<=11){
+        if(tempMyYear<tempCurYear || $(this).index() < tempCurMonth){
+          var month_blc_element = $(".month_open_balance:eq("+$(this).index()+")");
+          month_blc_element.text(result.toLocaleString("en-US"));
+          if (result > 0){
+            month_blc_element.addClass("green-text");
+          }
+          else if (result < 0){
+            month_blc_element.addClass("red-text")
+          }
+        }
+      }
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+    $('.page-date-input').datepicker(
+      {
+        format: "m/yyyy", 
+        startDate: '1/2012', 
+        endDate: '0y', 
+        startView: "years",
+        minViewMode: "years",
+        maxViewMode: "years", 
+        autoclose: true, 
+        language: 'ar', 
+        orientation: 'bottom right', 
+        beforeShowYear: function(date){
+          var today = new Date();          
+          if(date.getFullYear() == today.getFullYear()){
+            return {classes: 'month-highlight'};
+          }
+        },
+        disableTouchKeyboard: true
+        }
+    );
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    var year;
+    for (var i = 0; i < sURLVariables.length; i++){
+      var sParameterName = sURLVariables[i].split('=');
+      if (sParameterName[0] == "year"){
+        year = decodeURIComponent(sParameterName[1]);
+        $("input[name=myYear]").val(year);
+      }
+    }
+    if (!year){
+      year = new Date().getFullYear();
+    }
+    else{
+      year = parseInt(year);
+    }
+    $('.page-date-input').datepicker("update", new Date(year,1,1));
+    var today_date = new Date();
+    var options = { year: 'numeric', month: 'long', day: 'numeric' };
+    $('.ub-sub-title>span').text(today_date.toLocaleDateString("ar-EG", options));
+  })
+  $(".page-date-input").on("changeDate", function(e){
+    // console.log(e.format("m/yyyy"), "<<< Change");
+    window.location.href = "/tenant-dashboard?u="+$("#select-unit").val()+"&year="+e.format("yyyy");
+  })
+  $(document).on('click', 'button[name="print-button"]', function(){
+    ga_register('print','click','unit_report');
+    window.print();
+  })
+
+  $(document).on("click", ".select-unit", function(){
+    $('.unit-list').html('<i class="fa fa-spinner fa-gray fa-pulse fa-2x fa-fw"></i>');
+    $('.unit-modal').show();
+    $.ajax({
+      url: '/tenant-dashboard',
+      type: 'POST',
+      data: {'request': 'getUnits',
+            },
+      datatype: 'json',
+    })
+    .done(function(data){      
+      if(data['status']=="success"){
+        // Show saved notification
+        // console.log("data['message']",data['message']);
+        var myHtml = '';
+        for (i=0;i<data['message'].length;i++){
+          myHtml += '<button class="choose-unit font20px '+ (data['message'][i].urlsafe == $('.select-unit').attr('ud') ? 'text-bold selected-year' : '') +'" go2unit="'+data['message'][i].urlsafe+'" unit_number="'+data['message'][i].number
+          +'">وحدة '+data['message'][i].number+' - '+data['message'][i].bname+'</button>';
+        }
+        $('.unit-list').html(myHtml);
+      }
+      else if(data['status']=="failed"){
+        $('.unit-list').html("<p class='fa fa-2x fa-error fa-exclamation-triangle light-grey-text'></p>"+data['message']);
+      }
+      else if(data['status']=="loggedOut"){
+        window.location.replace("/");
+      }
+    })
+    .fail(function(data){
+      console.log("request failed! error code: UNT-Getx034");
+    })
+  })
+  $(document).on("click", ".select-year", function(){
+    $('.year-modal').show();
+  })
+  $(document).on("click", ".close", function(){
+    $('.year-modal').hide();
+    $('.unit-modal').hide();
+  })
+  $(document).click(function(event){
+    if (event.target == document.getElementById('myYearModal')) {
+      $('.year-modal').hide();
+    }
+    if (event.target == document.getElementById('myUnitModal')) {
+      $('.unit-modal').hide();
+    }
+  })
+  $("div[id^='details-']").on('show.bs.collapse hide.bs.collapse', function () {
+    $(this).siblings("div.month-card").find(".main-area").effect("highlight", {'color':'#ccc'}, 1000);
+  })
+  $("div[id^='details-']").on('shown.bs.collapse', function() {
+    if (!(navigator.userAgent.search("Safari")>0 && (navigator.userAgent.search("Mac")>0) || navigator.userAgent.search("iPhone")>0)){
+      this.scrollIntoView({behavior: 'smooth'});
+    }
+    if ($(this).attr('id') == "details-1"){
+      this.scrollIntoView({behavior: 'smooth'});
+    }
+
+  });
+  
+  $(document).on("click", "button.choose-year", function(){
+    var myYear = $(this).attr('go2year');
+    $('.select-year span.report-year').text(myYear);
+    $('.year-modal').hide();
+    $(".loading-unit-report").removeClass("hidden");
+    $(".months-cards-list").hide();
+    window.location.href = "/tenant-dashboard?u="+$('.select-unit').attr('ud')+"&year="+myYear;
+  })
+
+  $(document).on("click", "button.choose-unit", function(){
+    // TBD SUBMIT!
+    var myUnit = $(this).attr('unit_number');
+    $('.select-unit span.unit-number').text(myUnit);
+    $('.unit-modal').hide();
+    $('#summary-table, #unit-collection-summary, #unit-acc-balance, #unit-details, .unit-balance, .dummy-panel ').hide();
+    $(".loading-unit-report").removeClass("hidden");
+    $(".months-cards-list").hide();
+    window.location.href = "/tenant-dashboard?u="+$(this).attr('go2unit')+"&year="+getReportYear();
+  })
+  $(document).on("click", ".tenant_balance_icon", function(){
+    var image = $(".tenant_balance_icon").attr("src");
+    var msg = $(".tenant_balance_icon").attr("data-msg");
+    var msg_title = $(".tenant_balance_icon").attr("data-msg-title");
+    swal({
+      html: "<br><div><img src='"+image+"'></img></div><br><p class='font17'>"+msg+"</p>",
+      title: msg_title,
+      confirmButtonText: 'أغلق',
+      confirmButtonColor: '#84c159',
+    })
+  })
+  $(".acc-balance-check").on('change', function(){
+    $("#unit-acc-balance").toggleClass("hidden-print hidden");
+  })
+  $(".expenses-collections-check").on('change', function(){
+    $("#summary-table").toggleClass("hidden-print hidden");
+  })
+  $(".collections-details-check").on('change', function(){
+    $("#unit-collection-summary").toggleClass("hidden-print hidden");
+  })
+  
+  function getReportYear(){
+    var year = $(".report-year").text();
+    if(!year || year =="" || !$.isNumeric(year)){
+      year = new Date();
+      year = year.getFullYear();
+    }
+    return year;
+  }
+  function save(mydata, myvalue){
+    $.ajax({
+      url: '/signup-tenants',
+      type: 'POST',
+      data: {'ctdata': 'save',
+             'type': mydata,
+             'value': myvalue
+            },
+      datatype: 'json',
+    })
+    .done(function(data){
+      myconame.removeClass("green-text");
+      if(data['status']=="success"){
+        // Show saved notification
+        myconame.val(myvalue); //Show saved value
+      }
+      else if(data['status']=="failed"){
+        myconame.addClass("red-text");
+        myconame.val("failed!");
+        console.log(data['message']);
+      }
+    })
+    .fail(function(data){
+      console.log("request failed! error code: SAV-TNx45");
+      alert("Error saving ", mydata, myvalue);
+      myconame.addClass("red-text");
+      myconame.val("failed!");
+    })
+  }
+</script>
+
+
+  
+<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./userFrontStyle/box-dfc01efbdc94bb0936d9a35a502b0b64.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-arp-injected="true">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./userFrontStyle/bootstrap.min.css">
+        <link rel="stylesheet" href="./userFrontStyle/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="./userFrontStyle/font-awesome-animation.min.css" type="text/css">
+        <link rel="stylesheet" href="./userFrontStyle/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" href="./userFrontStyle/bootstrap-datepicker.min.css">
+        <link rel="stylesheet" href="./userFrontStyle/7esbastyle.css">
+        <link rel="stylesheet" href="./userFrontStyle/tenant_dashboard.css">
+        <link rel="stylesheet" href="./userFrontStyle/sweetalert2.min.css">
+        <script async="" src="./userFrontStyle/analytics.js.download"></script>
+        <script>
+          if (location.host === 'www.7esba.com' || location.host === '7esba.com') {
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-90016638-1', 'auto');
+            ga('send', 'pageview');
+          }
+        </script>
+        <script>
+          if (location.host === 'www.7esba.com' || location.host === '7esba.com') {
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:384086,hjsv:5};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+          }
+        </script>
+        <script async="" src="./userFrontStyle/hotjar-384086.js.download"></script>
+        <title>حسابي</title>
+      <script async="" src="./userFrontStyle/modules.5fe2f4f38cf4833026a9.js.download" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style>
+    </head>
+  <body class="vsc-initialized">
+    <nav class="navbar sidebar" role="navigation">
+        <div class="container-fluid">
+      		<!-- Brand and toggle get grouped for better mobile display -->
+      		<div class="navbar-header">
+            <!-- <span class="navbar-toggle text-right nav-bar-menu-name font20px gray-text">القائمة</span> -->
+            <span class="navbar-toggle text-center nav-bar-menu-building-name font20px light-gray-text">عمارة عكا 2021</span>
+      			<button type="button" class="navbar-toggle pull-left" data-target="#bs-sidebar-navbar-collapse-1" data-toggle="collapse">
+      				<span class="sr-only">القائمة</span>
+              <span class="fa fa-bars"></span>
+      			</button>
+      			<!-- <a class="navbar-brand pull-left" href="/admin-dashboard">7esba</a> -->
+      		</div>
+      		<!-- Collect the nav links, forms, and other content for toggling -->
+      		<div class="collapse navbar-collapse" id="bs-sidebar-navbar-collapse-1">            
+            <ul class="nav navbar-nav">
+              <div class="text-center user-account">Mohammad</div>              
+              
+                <hr class="hr-margin-top hr-light-gray">
+                <div class="text-center build-address">
+                  <div class="address-name">عمارة عكا 2021</div>                
+                  <div class="address-text"></div>
+                </div>
+                <hr class="hr-margin-top hr-light-gray">
+              
+              <li class="nav-account-myaccount active"><a href="https://www.7esba.com/account" class="text-right"><i class="fa fa-user-o" aria-hidden="true"></i><span> حسابي</span></a></li>
+              <li class="nav-item-my-units" id="nav-item-my-units"><a href="https://www.7esba.com/tenant-dashboard"><span class="fa fa-fw fa-home sub-sidebar-icon" aria-hidden="true"></span>وحداتي</a></li>
+              
+              
+              
+              
+              <hr class="hr-margin-top hr-light-gray">
+              <li class="font14px"><a href="https://www.7esba.com/logout" class="text-right"><span class="fa fa-sign-out" aria-hidden="true"></span><span> تسجيل خروج</span></a></li>
+            </ul>
+            <ul class="sm-footer">
+              <li><a href="mailto:support@7esba.com" data-toggle="tooltip" title="E-mail" target="_blank" class="gray-tooltip"><i class="fa fa-envelope fa-2x"></i></a></li>
+              <li><a href="https://www.twitter.com/7esba" data-toggle="tooltip" title="Twitter" target="_blank" class="gray-tooltip"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="https://www.facebook.com/7esba" data-toggle="tooltip" title="Facebook" target="_blank" class="gray-tooltip"><i class="fa fa-facebook fa-2x"></i></a></li>
+            </ul>
+          </div>
+    	  </div>
+    </nav>
+    <!-- Content -->
+    <div class="main">
+      
+<div class="container-fluid">
+  <!-- Title -->
+  <h1 class="text-center ptitle">حسابي</h1>
+  
+  <form class="form-horizontal" id="update-name-form" action="https://www.7esba.com/my-account" method="post">
+    <!-- Name -->
+    <div class="name-div"> 
+      <button class="btn btn-default btn-lg btn-section btn-name-settings selected-section" type="button" data-toggle="collapse" data-target="#collapseName" aria-expanded="true" aria-controls="collapseExample">الإسم <span class="open-ind fa pull-left fa-height-adjust fa-chevron-down"></span></button>
+      
+      <fieldset class="div-dashed-gray collapse in" id="collapseName" aria-expanded="true" style="">
+        <div class="form-group">
+          <label class="col-md-1 col-xs-3 col-sm-1 control-label pull-right" for="myname">إسمي</label>
+          <div class="col-sm-4 col-xs-9 pull-right">
+            <input class="form-control text-center" type="text" data-hj-whitelist="" id="myname" name="myname" value="Mohammad" placeholder="الإسم واللقب">
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label class="col-md-1 col-xs-3 col-sm-1 control-label pull-right" for="myemail">الإيميل</label>
+          <div class="col-sm-4 col-xs-9 pull-right">
+            <input class="form-control text-center" type="text" id="myemail" name="myemail" value="aboslem1001@gmail.com" placeholder="example@domain.com" readonly="">
+          </div>
+        </div>
+        
+        <div class="confirm-div">
+          <button type="submit" class="btn btn-success" name="save-name-btn" id="save-name-btn" tabindex="0">حفظ الإسم</button>
+        </div>
+        
+        <div class="loading hidden">
+          <span class="font17px">جاري حفظ البيانات </span>
+          <span class="fa fa-spinner fa-lg fa-spin" aria-hidden="true"></span>
+        </div>
+        
+      </fieldset>
+    </div>
+  </form>
+  <br>
+  <form class="form-horizontal" id="update-password-form" action="https://www.7esba.com/my-account" method="post">
+    <!-- Password -->
+    <div class="pass-div">
+      <button class="btn btn-default btn-lg btn-section" type="button" data-toggle="collapse" data-target="#collapsePass" aria-expanded="false" aria-controls="collapseExample">تغيير كلمة المرور <span class="open-ind fa fa-chevron-left pull-left fa-height-adjust"></span></button>
+      
+      <fieldset class="div-dashed-gray collapse" id="collapsePass">
+        <div class="form-group">
+          <label class="col-md-2 col-xs-4 col-sm-3 control-label pull-right" for="oldpass">كلمة المرور الحالية</label>
+          <div class="col-md-4 col-xs-8 pull-right">
+            <input class="form-control right-text" type="password" id="oldpass" name="oldpass" placeholder="كلمة المرور الحالية"> 
+            <div class="red-text hidden" id="err-old-pass"><div>يجب كتابة كلمة المرور الحالية للإكمال!</div></div>
+          </div>  
+        </div>
+
+        <div class="form-group">
+          <label class="col-md-2 col-xs-4 col-sm-3 control-label pull-right" for="newpass">كلمة المرور الجديدة</label>
+          <div class="col-md-4 col-xs-8 pull-right">
+            <input class="form-control right-text" type="password" id="newpass" name="newpass" placeholder="كلمة المرور الجديدة">
+            <div class="red-text hidden" id="err-new-pass"><div>أدخل ٨ أحرف على الأقل!</div></div>
+          </div>  
+        </div>
+
+        <div class="confirm-div">
+          <button type="submit" class="btn btn-success" name="save-pass-btn" id="save-pass-btn" tabindex="0">حفظ كلمة المرور الجديدة</button>
+        </div>
+        
+        <div class="loading hidden">
+          <span class="font17px">جاري حفظ البيانات </span>
+          <span class="fa fa-spinner fa-lg fa-spin" aria-hidden="true"></span>
+        </div>
+      </fieldset>
+    </div>
+  
+  </form>
+</div>
+
+    </div>
+    <script src="./userFrontStyle/jquery.min.js.download"></script>
+    <script src="./userFrontStyle/jquery-ui.min.js.download"></script>
+    <script src="./userFrontStyle/bootstrap.min.js.download"></script>
+    <script src="./userFrontStyle/bootstrap-datepicker.min.js.download"></script>
+    <script src="./userFrontStyle/bootstrap-datepicker.ar.min.js.download" charset="UTF-8"></script>
+    <script src="./userFrontStyle/sweetalert2.min.js.download"></script>
+    <!-- base JS -->
+    <script>
+      $(document).ready(function() {
+        // $("li[class^=nav-item] .active").find(".load-icon").addClass("hidden");
+      })
+      $('.dropdown').on('show.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(300);
+      });
+      $('.dropdown').on('hide.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(2);
+      });
+      function menuSelect(mi){
+        $("li[class^=nav-item]").removeClass("active");
+        mi.addClass("active");
+      }
+      function ga_register(cat, act, lbl){
+        if (location.host === 'www.7esba.com' || location.host === '7esba.com'){
+          ga('send', 'event', cat, act, lbl);
+        }
+      }
+      $(document).on("click", "li[class^=nav-item]", function(){
+        $(".load_icon").remove();
+        $(this).find("a").append('<i class="load-icon fa fa-spinner fa-spin pull-left hidden load_icon"></i>');
+        $(this).find(".load-icon").removeClass("hidden");
+      })      
+    </script>
+    
+<script>
+  $(document).ready(function(){
+    document.title = $(".ptitle").text();
+    $(".user-account").closest("li").addClass("open");
+    $("li[class='nav-account-myaccount']").addClass("active");
+    $(".user-account").removeAttr("data-toggle");
+    $(".btn-name-settings").trigger("click");
+  })
+  $(document).on("click", "#save-name-btn", function(e){
+    e.preventDefault();
+    $("#oldpass").val("");
+    $("#newpass").val("");
+    $(".confirm-div").addClass("hidden");
+    $(".loading").removeClass("hidden");
+    // $("#update-account-form").submit();
+    newRequest('changeName',$('#myname').val(),$('oldpass').val(),$('newpass').val());
+  })
+  $(document).on("click", "#save-pass-btn", function(e){
+    e.preventDefault();
+    if($("#oldpass").val()==""){
+      $("#err-old-pass").removeClass("hidden");
+      return;
+    }
+    if($("#oldpass").val()!=""){
+      if($("#newpass").val().length < 8){
+        $("#err-new-pass").removeClass("hidden");
+        return;
+      }
+      else{
+        $("#err-new-pass").addClass("hidden");
+      }
+    }
+    $(".confirm-div").addClass("hidden");
+    $(".loading").removeClass("hidden");
+    // $("#update-account-form").submit();
+    newRequest('changePass',$('#myname').val(),$('#oldpass').val(),$('#newpass').val());
+  })
+  function newRequest(myRequest,name,oldpass,newpass){
+    $.ajax({
+      type: 'POST',
+      data: {
+        'myRequest': myRequest,
+        'myname':name,
+        'oldpass':oldpass,
+        'newpass':newpass,
+      },
+      datatype: 'json',
+    })
+    .done(function(data){      
+      if(data['status']=="success"){
+        swal({
+          type: 'success',
+          text: data['message'],
+          confirmButtonColor: '#53be0c',
+          // confirmButtonText: "أغلق",
+          showConfirmButton: false,
+          timer: 3000,
+        }).then(
+          function (result) {}
+        )
+        updateUI('reset');
+        $('.user-account').text(name);
+      }
+      else if(data['status']=="failed"){
+        swal({
+          type: 'error',
+          text: data['message'],
+          confirmButtonColor: '#53be0c',
+          confirmButtonText: "أغلق",
+          showConfirmButton: true,
+          // timer: 3000,
+        }).then(
+          function (result) {}
+        )
+        updateUI('reset');
+      }
+      else if(data['status']=="loggedOut"){
+        window.location.replace("/");
+      }
+    })
+    .fail(function(data){
+      console.log("request failed! error code: UNT-Getx034");
+    })
+  }
+  function updateUI(status){
+    if (status == 'reset'){
+      $(".confirm-div").removeClass("hidden");
+      $(".loading").addClass("hidden");
+      $("#oldpass").val("");
+      $("#newpass").val("");
+    }
+  }
+
+  $(document).on("keydown", "#myname", function(e){
+    if (e.keyCode == 13) {
+      $("#save-name-btn").trigger('click');
+    }
+  })
+  $(document).on("keydown", "#oldpass", function(e){
+    if (e.keyCode == 13) {
+      e.preventDefault();
+      $("#newpass").focus();
+    }
+  })
+
+  $(document).on("click", ".btn-section", function(){
+    $(this).find("span").toggleClass("fa-chevron-down fa-chevron-left");
+    $(this).toggleClass("selected-section");
+    $(this).blur();
+  })
+</script>
+
+  
+<iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./userFrontStyle/box-dfc01efbdc94bb0936d9a35a502b0b64.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>
