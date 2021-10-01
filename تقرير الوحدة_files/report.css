@@ -1,0 +1,164 @@
+td.sticky,
+th.sticky,
+td.standstill,
+th.standstill{
+  position: sticky;
+  position: -webkit-sticky;
+  right: 0;
+}
+#tableExpenses td.standstill + td.sticky{
+  right: 88px;
+}
+#yearly-report-cols-table td.standstill + td.sticky{
+  right: 100px;
+}
+#yearly-report-cols-table td.standstill{
+  min-width: 100px !important;
+  max-width: 100px;
+}
+
+td.sticky:after,
+th.sticky:after{
+  box-shadow: -10px 0 10px -10px inset;
+  content: "";
+  height: calc(100% + 1px);
+  top: 0;
+  left: -15px;
+  position: absolute;
+  width: 15px;
+}
+#tableExpenses span.exp-cat-icon{
+  height: 24px;
+  width: 24px;
+  font-size: 1.2em;
+  color: white;
+  position: absolute;
+  right: 0px;
+  top: -1px;
+}
+.exp-row-catnsubnicon{
+  overflow: unset;
+}
+.bg-menu-color-color{
+  background-color: #f5f5f5;
+}
+.bg-color-table-bottom{
+  background-color: #f9f9f9;
+}
+.dues-tenant-name{
+  display: inline-block;
+  max-width: 90px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: text-bottom;
+}
+/* 
+#tableExpenses .exp-cat{
+  width: 96px;
+} */
+
+.action-icon{
+    padding: 2px 4px;
+    border-radius: 5px; 
+    cursor: pointer;
+    margin-right: 3px;
+}
+.sms-tenant:hover{
+  color: white;
+  background-color: #96d28c;
+}
+.sms-tenant:active,
+.sms-tenant:focus{
+    color: darkgreen;
+}
+
+#expenses-summary tr:nth-of-type(odd) td:first-child{
+  background-color: #f9f9f9;
+}
+#expenses-summary tr:nth-of-type(even) td:first-child{
+  background-color: #fff;
+}
+.range-slider-z{
+  padding-top: 6px;
+  padding-right: 2px;
+  margin-top: 3px;
+}
+.range-slider-z label{
+  font-weight: unset;
+}
+.range-slider-z .ui-slider{
+  max-width: 225px;
+  margin-top: 9px;
+}
+.range-slider-z.slider-changed .ui-slider-range{
+  background: unset;
+  /* background-color: #94b6fc; */
+  background-color: #ffaaa4;
+}
+.range-slider-z.slider-changed .ui-slider-handle{
+  background: unset;
+  /* background-color: #508efb; */
+  background-color: #a51f15;
+}
+
+.datepicker-rtl table tr td span {
+  float: right;
+}
+
+@media (min-width: 768px) {
+  .dues-tenant-name{
+    max-width: 100%;
+  }
+  td.sticky,
+  th.sticky,
+  td.standstill,
+  th.standstill{
+    position: inherit;
+    right: unset;
+  }
+  td.sticky:after,
+  th.sticky:after{
+    position: unset;
+    box-shadow: unset;
+    content: "";
+    height: unset;
+    width: unset;
+  }
+  #tableExpenses span.exp-cat-icon{
+    height: 26px;
+    width: 26px;
+    font-size: 1.3em;
+    color: white;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .range-slider-z{
+    padding-right: 115px;
+    padding-top: 12px;
+  }
+  .range-slider-z label{
+    font-weight: unset;
+  }
+}
+
+@media print{
+  td.sticky,
+  th.sticky,
+  td.standstill,
+  th.standstill{
+    position: inherit;
+    right: unset;
+  }
+  td.sticky:after,
+  th.sticky:after{
+    position: unset;
+    box-shadow: unset;
+    content: "";
+    height: unset;
+    width: unset;
+  }
+  .dues-tenant-name{
+    max-width: 100%;
+  }
+}
