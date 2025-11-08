@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>نظام إدارة العقار</title>
+<style>
+  body {font-family: Arial; direction: rtl; margin:0; padding:0; background:#f9f9f9;}
+  nav{background:#004080; color:white; padding:10px;}
+  nav button{margin:0 5px; padding:8px 15px; cursor:pointer; background:#0070c0; color:white; border:none; border-radius:5px;}
+  section{display:none; padding:20px;}
+  table{width:100%; border-collapse:collapse; margin-top:10px;}
+  th,td{border:1px solid #ddd; padding:8px; text-align:center;}
+  th{background:#e6e6e6;}
+  input,select{padding:5px; margin:5px;}
+</style>
+</head>
+<body>
+
+<nav>
+  <button onclick="showPage('dashboard')">لوحة التحكم</button>
+  <button onclick="showPage('units')">الوحدات</button>
+  <button onclick="showPage('residents')">المقيمين</button>
+  <button onclick="showPage('payments')">المدفوعات</button>
+  <button onclick="showPage('expenses')">المصروفات</button>
+  <button onclick="showPage('reports')">التقارير</button>
+</nav>
+
+<!-- لوحة التحكم -->
+<section id="dashboard">
+  <h2>لوحة التحكم</h2>
+  <div id="stats">
+    <p>إجمالي الوحدات: <span id="totalUnits">0</span></p>
+    <p>الوحدات المشغولة: <span id="occupiedUnits">0</span></p>
+    <p>الوحدات الفارغة: <span id="vacantUnits">0</span></p>
+    <p>إجمالي المدفوعات: <span id="totalPayments">0</span></p>
+  </div>
+</section>
+
+<!-- إدارة الوحدات -->
+<section id="units">
+  <h2>الوحدات</h2>
+  <input id="unitNumber" placeholder="رقم الوحدة">
+  <input id="floor" placeholder="الدور" type="number">
+  <select id="status">
+    <option value="vacant">فارغة</option>
+    <option value="occupied">مشغولة</option>
+  </select>
+  <button onclick="addUnit()">إضافة وحدة</button>
+  <table>
+    <thead><tr><th>رقم الوحدة</th><th>الدور</th><th>الحالة</th><th>إجراءات</th></tr></thead>
+    <tbody id="unitsTable"></tbody>
+  </table>
+</section>
+
+<!-- تسجيل المقيمين -->
+<section id="residents">
+  <h2>المقيمين</h2>
+  <input id="residentName" placeholder="اسم المقيم">
+  <select id="residentUnit"></select>
+  <button onclick="addResident()">إضافة مقيم</button>
+  <table>
+    <thead><tr><th>اسم المقيم</th><th>الوحدة</th><th>إجراءات</th></tr></thead>
+    <tbody id="residentsTable"></tbody>
+  </table>
+</section>
+
+<!-- المدفوعات -->
+<section id="payments">
+  <h2>المدفوعات الشهرية</h2>
+  <select id="paymentResident"></select>
+  <input id="paymentAmount" placeholder="المبلغ" type="number">
+  <button onclick="addPayment()">تسجيل الدفع</button>
+  <table>
+    <thead><tr><th>المقيم</th><th>المبلغ</th><th>التاريخ</th></tr></thead>
+    <tbody id="paymentsTable"></tbody>
+  </table>
+</section>
+
+<!-- المصروفات -->
+<section id="expenses">
+  <h2>المصروفات</h2>
+  <input id="expenseName" placeholder="نوع المصروف">
+  <input id="expenseAmount" placeholder="المبلغ" type="number">
+  <button onclick="addExpense()">إضافة مصروف</button>
+  <table>
+    <thead><tr><th>المصروف</th><th>المبلغ</th><th>التاريخ</th></tr></thead>
+    <tbody id="expensesTable"></tbody>
+  </table>
+</section>
+
+<!-- التقارير -->
+<section id="reports">
+  <h2>التقارير</h2>
+  <p>سيتم عرض الرسوم البيانية والإحصائيات هنا</p>
+</section>
+
+<script>
+let units = JSON.parse(localStorage.getItem('units')||'[]');
+let residents = JSON.parse(localStorage.getItem('residents')||'[]');
+let payments = JSON.parse(localStorage.getItem('payments')||'[]');
+let expenses = JSON.parse(localStorage.getItem('expenses')||'[]');
+
+function showPage(id){
+  document.querySelectorAll('section').forEach(sec=>sec.style.display='none');
+  document.getElementById(id).style.display='block';
+  updateStats();
+  renderUnits();
+  renderResidents();
+  renderPayments();
+  renderExpenses();
+}
+
+function updateStats(){
+  document.getElementById('totalUnits').innerText = units.length;
+  const occ = units.filter(u=>u.status==='occupied').length;
+  document.getElementById('occupiedUnits').innerText = occ;
+  document.getElementById('vacantUnits').innerText = units.length - occ;
+  const totalPay = payments.reduce((sum,p)=>sum+Number(p.amount),0);
+  document.getElementById('totalPayments').innerText = totalPay;
+}
+
+function addUnit(){
+  const unitNumber = document.getElementById('unitNumber').value;
+  const floor = document.getElementById('floor').value;
+  const status = document.getElementById('status').value;
+  if(unitNumber && floor){
+    units.push({unitNumber,floor,status});
+    localStorage.setItem('units',JSON.stringify(units));
+    renderUnits();
+    updateStats();
+  }
+}
+
+function renderUnits(){
+  const tbody = document.getElementById('unitsTable');
+  tbody.innerHTML = '';
+  units.forEach((u,i)=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${u.unitNumber}</td><td>${u.floor}</td><td>${u.status}</td>
+                    <td><button onclick="deleteUnit(${i})">حذف</button></td>`;
+    tbody.appendChild(tr);
+  });
+  const unitSelects = document.querySelectorAll('#residentUnit');
+  unitSelects.forEach(sel=>{
+    sel.innerHTML = units.map(u=>`<option value="${u.unitNumber}">${u.unitNumber}</option>`).join('');
+  });
+}
+
+function deleteUnit(i){ units.splice(i,1); localStorage.setItem('units',JSON.stringify(units)); renderUnits(); updateStats(); }
+
+function addResident(){
+  const name = document.getElementById('residentName').value;
+  const unit = document.getElementById('residentUnit').value;
+  if(name && unit){
+    residents.push({name,unit});
+    localStorage.setItem('residents',JSON.stringify(residents));
+    renderResidents();
+  }
+}
+
+function renderResidents(){
+  const tbody = document.getElementById('residentsTable');
+  tbody.innerHTML = '';
+  residents.forEach((r,i)=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${r.name}</td><td>${r.unit}</td>
+                    <td><button onclick="deleteResident(${i})">حذف</button></td>`;
+    tbody.appendChild(tr);
+  });
+  const paymentSelect = document.getElementById('paymentResident');
+  paymentSelect.innerHTML = residents.map(r=>`<option value="${r.name}">${r.name}</option>`).join('');
+}
+
+function deleteResident(i){ residents.splice(i,1); localStorage.setItem('residents',JSON.stringify(residents)); renderResidents(); }
+
+function addPayment(){
+  const resident = document.getElementById('paymentResident').value;
+  const amount = document.getElementById('paymentAmount').value;
+  if(resident && amount){
+    payments.push({resident,amount,date:new Date().toLocaleDateString()});
+    localStorage.setItem('payments',JSON.stringify(payments));
+    renderPayments();
+    updateStats();
+  }
+}
+
+function renderPayments(){
+  const tbody = document.getElementById('paymentsTable');
+  tbody.innerHTML = '';
+  payments.forEach(p=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${p.resident}</td><td>${p.amount}</td><td>${p.date}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+function addExpense(){
+  const name = document.getElementById('expenseName').value;
+  const amount = document.getElementById('expenseAmount').value;
+  if(name && amount){
+    expenses.push({name,amount,date:new Date().toLocaleDateString()});
+    localStorage.setItem('expenses',JSON.stringify(expenses));
+    renderExpenses();
+  }
+}
+
+function renderExpenses(){
+  const tbody = document.getElementById('expensesTable');
+  tbody.innerHTML = '';
+  expenses.forEach(e=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${e.name}</td><td>${e.amount}</td><td>${e.date}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+// عرض الصفحة الرئيسية عند التحميل
+showPage('dashboard');
+</script>
+
+</body>
+</html>
